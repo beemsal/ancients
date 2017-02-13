@@ -44,12 +44,6 @@ function configSwitch(target) {
             use: ['babel-loader?cacheDirectory', 'eslint-loader'],
             include: appPath
           },
-          // json src file
-          {
-            test: /\.json$/,
-            use: extractJSON.extract({ use: 'file-loader' }),
-            include: path.join(__dirname, 'public')
-          },
           // Extract CSS during build
           {
             test: /\.css$/,
