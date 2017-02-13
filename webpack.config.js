@@ -109,7 +109,6 @@ function configSwitch(target) {
       };
 
       module.devServer = {
-        contentBase: path.join(__dirname, "public")
         // host: 'localhost',
         // port: 9000
       };
