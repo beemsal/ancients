@@ -6,7 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractCSS = new ExtractTextPlugin('[name].[chunkhash].css');
-const extractJSON = new ExtractTextPlugin('olympics_2008_medalists.json');
 
 const TARGET = process.env.npm_lifecycle_event;
 const stylePath = path.join(__dirname, 'app', 'main.css');
@@ -78,8 +77,7 @@ function configSwitch(target) {
           minChunks: Infinity
         }),
         // Output extracted CSS to a file
-        extractCSS,
-        extractJSON
+        extractCSS
       ]
 
       module.output = {
