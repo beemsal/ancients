@@ -1,0 +1,28 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+#ancient-list {
+    margin: 20px 50px;
+    max-width: 60%;
+}
+
+#ancient-list .title {
+    margin: 7px 0 30px 0;
+}
+
+#ancient-list fieldset {
+    display: block;
+    margin: 7px 0 30px 0;
+}
+
+#ancient-list fieldset #search {
+    margin-right: 10px;
+}
+
+.ancient {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    float: left;
+}
